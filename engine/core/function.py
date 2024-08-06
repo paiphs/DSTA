@@ -18,7 +18,7 @@ from utils.utils_folder import create_folder
 from utils.utils_image_tensor import tensor2im
 
 from tabulate import tabulate
-from mmpose.core.evaluation import keypoint_pck_accuracy
+from mmpose.evaluation import keypoint_pck_accuracy
 from posetimation.loss.criterion import RLELoss
 
 
