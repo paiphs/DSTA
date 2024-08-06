@@ -9,9 +9,9 @@ DISTANCE: 2
 
 DATASET:
   NAME: "PoseTrack"
-  JSON_DIR: "/dataset/17/rename/jsons"
-  IMG_DIR: "/dataset/17/rename/images_renamed"
-  TEST_IMG_DIR: "/dataset/17/rename/images_renamed"
+  JSON_DIR: "/content/drive/MyDrive/data/jsons"
+  IMG_DIR: "/content/drive/MyDrive/data/images"
+  TEST_IMG_DIR: "/content/drive/MyDrive/data/images"
   IS_POSETRACK18: false
   COLOR_RGB: true
   DATASET: 'posetrack'
@@ -28,7 +28,7 @@ MODEL:
   INIT_WEIGHTS: true
 
   NUM_JOINTS: 17
-  PRETRAINED: '/code/DSTA/checkpoints/coco-laplace-rle.pth'
+  PRETRAINED: '/content/drive/MyDrive/Resnet50_posetrack.pth'
   TARGET_TYPE: gaussian
   IMAGE_SIZE:
     - 192
@@ -76,8 +76,8 @@ VAL:
   POST_PROCESS: true
 
 TEST:
-  ANNOT_DIR: './DcPose_supp_files/posetrack17_annotation_dirs/jsons/test'
-  COCO_BBOX_FILE: './DcPose_supp_files/posetrack17_precomputed_boxes/test_boxes.json'
+  ANNOT_DIR: '/content/drive/MyDrive/data/jsons/test'
+  COCO_BBOX_FILE: '/content/drive/MyDrive/data/jsons/test_boxes.json'
   USE_GT_BBOX: false
   BBOX_THRE: 1.0
   IMAGE_THRE: 0.2
