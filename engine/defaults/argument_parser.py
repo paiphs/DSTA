@@ -3,7 +3,7 @@
 import os
 import os.path as osp
 import argparse
-from mmcv import DictAction
+from mmengine.config.config import DictAction
 
 
 def default_parse_args():
