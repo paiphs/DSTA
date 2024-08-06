@@ -17,7 +17,7 @@ from utils.utils_registry import MODEL_REGISTRY
 from timm.models.layers import DropPath
 from functools import partial
 import torch.distributions as distributions
-from utils.rle_regression_head import import nets, nett, RealNVP
+from utils.rle_regression_head import nets, nett, RealNVP
 #from mmpose.models.heads.rle_regression_head import nets, nett, RealNVP
 from mmpose.evaluation import keypoint_pck_accuracy
 from ..backbones.Resnet import ResNet
